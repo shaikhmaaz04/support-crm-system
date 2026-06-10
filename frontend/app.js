@@ -94,7 +94,16 @@ function initCreate() {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(payload)
             });
-            if (res.ok) window.location.href = 'index.html';
+            
+            if (res.ok) {
+                // Parse the response to get the newly generated ticket_id
+                const data = await res.json();
+                // Redirect directly to the beautiful detail page!
+                window.location.href = `ticket.html?id=${data.ticket_id}`;
+            } else {
+                alert('Failed to create ticket. Please check your inputs.');
+                btn.textContent = 'Submit Ticket'; btn.disabled = false;
+            }
         } catch (err) {
             alert('Failed to create ticket.');
             btn.textContent = 'Submit Ticket'; btn.disabled = false;
