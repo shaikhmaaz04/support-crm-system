@@ -8,8 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style> body { font-family: 'Inter', sans-serif; } </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased">
-
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
     <nav class="bg-white border-b border-slate-200">
         <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
             <a href="index.html" class="text-sm font-medium text-slate-500 hover:text-slate-900 flex items-center gap-1 transition">
@@ -20,7 +19,7 @@
         </div>
     </nav>
 
-    <main class="max-w-6xl mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-3 gap-8" id="ticketDetailContainer">
+    <main class="flex-grow w-full max-w-6xl mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-3 gap-8" id="ticketDetailContainer">
         
         <!-- Left Column: Details -->
         <div class="lg:col-span-2 space-y-6">
@@ -92,6 +91,17 @@
         </div>
 
     </main>
+
+    <footer class="bg-white border-t border-slate-200 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-sm text-slate-500">
+                Built for the <span class="font-semibold text-slate-700">Datastraw Engineering Assessment</span>.
+            </p>
+            <p class="text-sm text-slate-400">
+                Developed by <a href="#" class="font-medium text-blue-600 hover:text-blue-800 transition">Maaz Shaikh</a>
+            </p>
+        </div>
+    </footer>
 
     <script src="app.js"></script>
 </body>
