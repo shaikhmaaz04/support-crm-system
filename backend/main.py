@@ -36,7 +36,7 @@ app.add_middleware(
 )
 
 # ---------------------------------------------------------
-# ENDPOINT 1: CREATE TICKET (With AI Spam & Triage Agents)
+# ENDPOINT 1: CREATE TICKET (With AI Spam & Triage Automations)
 # ---------------------------------------------------------
 @app.post("/api/tickets")
 def create_ticket(ticket: TicketCreate):
@@ -51,7 +51,7 @@ def create_ticket(ticket: TicketCreate):
     ai_status = "Open"
     ai_note = None
     
-    # --- AI AGENT PROCESSING ---
+    # --- AI PROCESSING ---
     try:
         prompt = f"""
         Analyze this customer support ticket.
