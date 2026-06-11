@@ -4,7 +4,7 @@ A fast, fully functional Customer Support CRM built for the Datastraw Engineerin
 
 ### 🔗 Links
 * **Live Application:** https://support-crm-system.up.railway.app/
-* **Demo Video:** 
+* **Demo Video:** https://drive.google.com/file/d/1_fQxLuNhfVwCJl0sN-UJd1oPzpMXGzK1/view?usp=sharing
 
 ---
 
